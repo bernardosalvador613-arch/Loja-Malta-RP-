@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VIPS • GTA RP Server</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#f59e0b;--muted:#6b7280;--bg:#0f172a}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071024 0%, #071733 100%);color:#e6eef8;margin:0;padding:0}
+    .wrap{max-width:1100px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ef4444);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071024}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px}
+    .vip-img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+    .vip-name{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#071024;font-weight:700;text-decoration:none}
+    .muted{color:var(--muted);font-size:14px}
+    .cars{display:flex;flex-direction:column;gap:12px}
+    .car-row{display:flex;gap:12px;align-items:center}
+    .car-thumb{width:120px;height:70px;object-fit:cover;border-radius:8px}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    .top-actions{margin-left:auto;display:flex;gap:10px}
+    nav{display:flex;align-items:center;margin-top:14px;gap:14px}
+    .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-weight:600}
+    @media(max-width:560px){header{flex-direction:column;align-items:flex-start}.top-actions{margin-left:0}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">VIP</div>
+      <div>
+        <h1>VIPS • GTA RP</h1>
+        <p class="lead">Servidor RP — Loja de VIPs e carros exclusivos. Pronto para deploy.</p>
+      </div>
+      <div class="top-actions">
+        <div class="badge">Versão demo</div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#vips" class="muted">Vips</a>
+      <a href="#carros" class="muted">Carros VIP</a>
+      <a href="#contato" class="muted">Contacto</a>
+    </nav>
+
+    <section id="vips" style="margin-top:18px">
+      <h2 style="margin:0 0 8px 0">Pacotes VIP</h2>
+      <div class="grid">
+        <!-- VIP Card 1 -->
+        <div class="card">
+          <img class="vip-img" src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="VIP 1">
+          <div class="vip-name"><strong>VIP Diamante</strong><span class="muted">€15</span></div>
+          <p class="muted">Acesso a carros exclusivos, spawn prioritário e canal privado.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">Comprar</a></div>
+        </div>
+
+        <!-- VIP Card 2 -->
+        <div class="card">
+          <img class="vip-img" src="https://images.unsplash.com/photo-1541447279577-2b8c3da4c6b0?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="VIP 2">
+          <div class="vip-name"><strong>VIP Ouro</strong><span class="muted">€9</span></div>
+          <p class="muted">Veículos VIP, extras de roleplay e badge no fórum.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">Comprar</a></div>
+        </div>
+
+        <!-- VIP Card 3 -->
+        <div class="card">
+          <img class="vip-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="VIP 3">
+          <div class="vip-name"><strong>VIP Prata</strong><span class="muted">€5</span></div>
+          <p class="muted">Spawn rápido e pequenas vantagens no servidor.</p>
+          <div style="margin-top:10px"><a class="btn" href="#">Comprar</a></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="carros" style="margin-top:20px">
+      <h2 style="margin:0 0 8px 0">Carros VIP</h2>
+      <div class="cars">
+        <div class="card car-row">
+          <img class="car-thumb" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Carro 1">
+          <div>
+            <strong>Comet GT (VIP)</strong>
+            <div class="muted">Classe: Esportivo • Spawn exclusivo</div>
+            <div style="margin-top:8px"><a class="btn" href="#">Adicionar ao pacote</a></div>
+          </div>
+        </div>
+
+        <div class="card car-row">
+          <img class="car-thumb" src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Carro 2">
+          <div>
+            <strong>Infernus Classic (VIP)</strong>
+            <div class="muted">Classe: Super • Skin exclusiva</div>
+            <div style="margin-top:8px"><a class="btn" href="#">Adicionar ao pacote</a></div>
+          </div>
+        </div>
+
+        <div class="card car-row">
+          <img class="car-thumb" src="https://images.unsplash.com/photo-1517949908114-447b6b5b8c6b?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Carro 3">
+          <div>
+            <strong>Sultan RS (VIP)</strong>
+            <div class="muted">Classe: Corrida • Upgrade de performance</div>
+            <div style="margin-top:8px"><a class="btn" href="#">Adicionar ao pacote</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:20px">
+      <h2 style="margin:0 0 8px 0">Contacto</h2>
+      <p class="muted">Para pagamentos e ativação, contacte-nos no Discord: <strong>#SeuServidorVIP</strong> ou envie e-mail para <strong>vips@seudominio.com</strong></p>
+    </section>
+
+    <footer>
+      <div>Este site é uma demo pronta para deploy. Conteúdo e imagens são exemplares.</div>
+      <div style="margin-top:8px">Quer que eu te ajude a fazer o deploy? Posso explicar os passos para Netlify / Vercel / GitHub Pages.</div>
+    </footer>
+  </main>
+</body>
+</html>
